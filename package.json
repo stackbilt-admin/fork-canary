@@ -1,0 +1,9 @@
+{
+  "name": "fork-canary",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Canary upstream for the AEGIS do_sandbox fork-mode pipeline.",
+  "type": "module",
+  "scripts": { "test": "vitest run" },
+  "devDependencies": { "vitest": "^3.2.4" }
+}
