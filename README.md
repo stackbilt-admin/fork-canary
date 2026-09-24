@@ -6,3 +6,5 @@ verify it with an acceptance gate, and open a PR back here.
 
 `slugify` has a known bug: runs of separators produce repeated dashes
 (`slugify('a  b')` returns `a--b`).
+
+Separator runs now collapse to one dash.
