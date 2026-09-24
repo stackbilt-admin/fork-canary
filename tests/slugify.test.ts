@@ -13,4 +13,9 @@ describe('slugify', () => {
   it('keeps digits', () => {
     expect(slugify('Release 2.44')).toBe('release-2-44');
   });
+
+  it('collapses runs of separators into one dash', () => {
+    expect(slugify('a  b')).toBe('a-b');
+    expect(slugify('Hello -- World!')).toBe('hello-world');
+  });
 });
