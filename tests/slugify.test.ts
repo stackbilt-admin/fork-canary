@@ -13,4 +13,8 @@ describe('slugify', () => {
   it('keeps digits', () => {
     expect(slugify('Release 2.44')).toBe('release-2-44');
   });
+
+  it('lowercases mixed-case words', () => {
+    expect(slugify('MiXeD CaSe')).toBe('mixed-case');
+  });
 });
