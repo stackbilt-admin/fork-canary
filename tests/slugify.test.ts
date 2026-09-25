@@ -13,4 +13,8 @@ describe('slugify', () => {
   it('keeps digits', () => {
     expect(slugify('Release 2.44')).toBe('release-2-44');
   });
+
+  it('keeps an already-slugged string unchanged', () => {
+    expect(slugify('already-slugged')).toBe('already-slugged');
+  });
 });
